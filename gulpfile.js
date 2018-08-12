@@ -64,7 +64,7 @@ gulp.task('build', ['bundle-js', 'bundle-css', 'copy-html']);
 
 gulp.task('watch', ['build'], function() {
 
-    watch(paths.html, watchOptions, function(){
+    watch(paths.html, watchOptions, function(){ 
         gulp.start('copy-html');
     });
     watch(paths.sass, watchOptions, function(){
