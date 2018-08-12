@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 services:
   angular:
     build:
@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     image: brramos/docker-angular
     ports:
-      - "8000:8000"
+      - "3000:3000"
     volumes:
       - ./index.js:/usr/src/app/index.js
       - ./app:/usr/src/app/app
