@@ -9,7 +9,7 @@ app.use(function(req, res){
 });
 
 if (module === require.main) {
-    var server = app.listen(process.env.PORT || 8000, function () {
+    var server = app.listen(process.env.PORT || 3333, function () {
     var host = server.address().address;
     var port = server.address().port;
 
