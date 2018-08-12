@@ -1,15 +1,15 @@
-FROM node:argon
+FROM node:alpine
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+MAINTAINER brramos
 
-# Install app dependencies
-COPY package.json /usr/src/app/
-COPY gulpfile.js /usr/src/app/
-COPY karma.conf.js /usr/src/app/
-RUN npm install --quiet
-RUN npm install -g gulp --quiet
+ENV PORT=3000
 
-EXPOSE 8000
-CMD [ "npm", "run", "dev" ]
+COPY . /var/www
+WORKDIR /var/www
+
+RUN yarn
+RUN yarn gulp
+
+EXPOSE $PORT
+
+ENTRYPOINT ["yarn", "start"]

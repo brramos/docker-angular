@@ -1,7 +1,7 @@
 {
-  "name": "docker-angular",
+  "name": "docker-angular-container",
   "version": "1.0.0",
-  "description": "An isolated AngularJS frontend container that offers an intuitive folder structure and a guided developer workflow.",
+  "description": "An AngularJS container",
   "main": "index.js",
   "scripts": {
     "start": "gulp && node index.js",
@@ -10,42 +10,42 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RyanNHG/docker-angular.git"
+    "url": "git+https://github.com/brramos/docker-angular.git"
   },
   "keywords": [
     "angular",
     "docker",
-    "frontend"
+    "container"
   ],
-  "author": "Ryan Haskell-Glatz",
+  "author": "Billy Ramos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RyanNHG/docker-angular/issues"
+    "url": "https://github.com/brramos/docker-angular/issues"
   },
-  "homepage": "https://github.com/RyanNHG/docker-angular#readme",
+  "homepage": "https://github.com/brramos/docker-angular#readme",
   "devDependencies": {
-    "angular-mocks": "^1.5.8",
-    "angular-route": "^1.5.8",
-    "browserify": "^13.1.0",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-nodemon": "^2.1.0",
-    "gulp-protractor": "^3.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-watch": "^4.3.9",
-    "jasmine-core": "^2.5.1",
-    "karma": "^1.3.0",
-    "karma-browserify": "^5.1.0",
-    "karma-jasmine": "^1.0.2",
-    "karma-ng-html2js-preprocessor": "^1.0.0",
-    "karma-phantomjs-launcher": "^1.0.2",
-    "stringify": "^5.1.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.7.0"
+    "angular-mocks": "1.5.8",
+    "angular-route": "1.5.8",
+    "browserify": "16.2.2",
+    "gulp": "3.9.1",
+    "gulp-clean": "0.4.0",
+    "gulp-nodemon": "2.2.1",
+    "gulp-protractor": "4.1.0",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.1",
+    "gulp-watch": "5.0.1",
+    "jasmine-core": "3.2.0",
+    "karma": "3.0.0",
+    "karma-browserify": "5.3.0",
+    "karma-jasmine": "1.1.2",
+    "karma-ng-html2js-preprocessor": "1.0.0",
+    "karma-phantomjs-launcher": "1.0.4",
+    "stringify": "5.2.0",
+    "vinyl-source-stream": "2.0.0",
+    "watchify": "3.11.0"
   },
   "dependencies": {
-    "angular": "^1.5.8",
-    "express": "^4.14.0"
+    "angular": "1.5.8",
+    "express": "4.16.3"
   }
 }

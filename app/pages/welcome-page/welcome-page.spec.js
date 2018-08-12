@@ -1,23 +1,17 @@
-describe('welcomePageCmpt', function() {
-
+describe('welcomePage', function() {
     var ctrl;
 
     beforeEach(function(){
-
-        // Load module
         angular.mock.module(require('.'));
 
-        // Initialize component
         inject(function($componentController) {
-            ctrl = $componentController('welcomePageCmpt', {});
+            ctrl = $componentController('welcomePage', {});
         });
 
     });
 
     it('has working uppercase function',function(){
-
         expect(ctrl.toUppercase('Ryan')).toEqual('RYAN');
-
     });
 
 });

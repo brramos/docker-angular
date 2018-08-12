@@ -81,7 +81,7 @@ gulp.task('watch', ['build'], function() {
     });
 
     nodemon({
-        script: './index.js',
+        script: 'index.js',
         watch: 'index.js',
         legacyWatch: true
     });

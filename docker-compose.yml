@@ -1,10 +1,10 @@
-version: '2'
+version: '1'
 services:
   angular:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ryannhg/angular
+    image: brramos/docker-angular
     ports:
       - "8000:8000"
     volumes:

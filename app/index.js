@@ -1,6 +1,10 @@
-angular.module(module.exports = 'app', [
-    require('pages'),
-    require('angular-route')
-])
-    .config(require('./router'))
-;
+(function () {
+   'use strict'
+
+    angular
+        .module(module.exports = 'app', [
+        require('pages'),
+        require('angular-route')
+    ]).config(require('./router'))
+})()
+

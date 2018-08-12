@@ -1,5 +1,9 @@
-angular.module(module.exports = 'pages', [
+(function () {
+    'use strict'
 
-    require('pages/welcome-page-cmpt')
+    angular
+        .module(module.exports = 'pages', [
+            require('pages/welcome-page')
 
-]);
+        ]);
+})()

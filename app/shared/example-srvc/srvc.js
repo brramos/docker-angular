@@ -1,12 +1,16 @@
-module.exports = [function(){
+(function () {
+    'use strict'
 
-  var srvc = this;
+    module.exports = [function () {
 
-  srvc.data = {
-    person: {
-      name: 'Jack',
-      age: 21,
-    }
-  };
+        var srvc = this;
 
-}];
+        srvc.data = {
+            person: {
+                name: 'Jack',
+                age: 21,
+            }
+        };
+
+    }];
+})()

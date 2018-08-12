@@ -1,5 +1,9 @@
-angular.module(module.exports = 'ExampleSrvc', [])
+(function () {
+    'use strict'
 
-    .service( module.exports, require('./srvc') )
+    angular
+        .module(module.exports = 'ExampleSrvc', [])
+        .service(module.exports, require('./srvc'))
 
-;
+})()
+

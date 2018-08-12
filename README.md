@@ -1,6 +1,9 @@
 # Docker | AngularJS
 > An isolated AngularJS frontend container that offers an intuitive folder structure and a guided developer workflow.
 
+## todo
+1. de-gulp
+
 
 ### Local Development
 
