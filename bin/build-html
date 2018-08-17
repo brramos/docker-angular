@@ -1,0 +1,1 @@
+find app -name '*.html' -type f -exec cp {} dist \\;

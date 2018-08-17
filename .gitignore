@@ -6,3 +6,5 @@ node_modules/
 
 # Generated Files
 dist/
+
+\.DS_Store

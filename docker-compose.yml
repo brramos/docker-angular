@@ -6,7 +6,8 @@ services:
       dockerfile: Dockerfile
     image: brramos/docker-angular
     ports:
-      - "3000:3000"
+      - "3001:3001"
     volumes:
-      - ./index.js:/usr/src/app/index.js
-      - ./app:/usr/src/app/app
+      - ./app/index.js:/var/www/app/index.js
+      - ./app:/var/www/app
+      - ./dist:/var/www/dist

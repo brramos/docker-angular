@@ -1,0 +1,1 @@
+babel src/js | uglifyjs > dist/js/app.js

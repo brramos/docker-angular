@@ -1,0 +1,1 @@
+browserify "src/index.js" -t [ stringify --extensions [.html] ] -o "dist/bundle.js"
