@@ -1,0 +1,138 @@
+.header-animation {
+  .changer {
+    position: absolute;
+    z-index: 30;
+    width: 230px;
+    left: 10%;
+    bottom: 10%;
+    padding: 0;
+    color: #777777;
+
+    .sub {
+      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 2.25em;
+      font-weight: 800;
+    }
+
+    .demos {
+      line-height: 1;
+
+      a {
+        color: #fff;
+        display: block;
+        margin: 15px 0;
+        font-size: 1.1875em;
+
+        &[data-go="1"] {
+          color: #40bbb8;
+        }
+
+        &[data-go="2"] {
+          color: #b24600;
+        }
+
+        &[data-go="3"] {
+          color: #98ada4;
+        }
+        &.hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  #container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+
+    > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background: no-repeat center;
+      height: 50vh;
+    }
+  }
+}
+
+[data-demo="1"] #container #f1 {
+  left: 40%;
+  right: auto;
+  width: 100%;
+  animation: roll 60s linear infinite;
+}
+
+[data-demo="2"] #container {
+  #f1 {
+    animation: zoomin 30s linear infinite;
+  }
+  #f2, #f3 {
+    transform: scale(1.1);
+    animation: zoomout 30s linear infinite;
+  }
+}
+
+[data-demo="3"] #container #f1 {
+  transform: translate(10%, 0%);
+  opacity: 0;
+  animation: opa 40s linear infinite;
+}
+
+@keyframes roll {
+  50% {
+    transform: translate(-40%, 0);
+  }
+
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+@keyframes zoomin {
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomout {
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes opa {
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(10%, 0%);
+  }
+}

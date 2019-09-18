@@ -1,0 +1,76 @@
+@import "../../styles/colors";
+
+$pad: 4rem;
+$space: 0;
+$stroke: .4rem;
+
+.text-in-border {
+  background: #ddd;
+
+  .box {
+    width: 60rem;
+    background: #123;
+    margin: 4.8rem auto;
+    padding: 1.6rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: $pad;
+      right: $pad;
+      left: $pad;
+      bottom: $pad - $space + 0.7rem;
+      border: solid $stroke white;
+      border-bottom: 0;
+    }
+
+    img {
+      width: 57rem;
+      height: 60rem;
+      opacity: .5;
+      object-fit: cover;
+    }
+
+    .text {
+      color: white;
+      position: absolute;
+      text-align: center;
+      bottom: $pad - $space;
+      left: $pad;
+      right: $pad;
+      white-space: nowrap;
+      overflow: hidden;
+      font-family: 'fjalla one', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+
+      div {
+        width: 200rem;
+        margin-left: -75rem;
+
+        .innertext::before,
+        .innertext::after {
+          content: '';
+          display: inline-block;
+          width: 60rem;
+          height: $stroke;
+          background: white;
+          vertical-align: text-bottom;
+        }
+
+        .innertext::before {
+          margin-right: 1.6rem;
+        }
+
+        .innertext::after {
+          margin-left: 1.6rem;
+        }
+      }
+
+    }
+
+  }
+
+}

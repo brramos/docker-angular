@@ -1,0 +1,35 @@
+@import "../../styles/colors";
+
+.btn-wrapper {
+  position: fixed;
+  top: calc(50% - 2.2rem);
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  .btn {
+    display: inline-block;
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+    background-color: rgb(0, 240, 168);
+    height: 4.5rem;
+    line-height: 4.2rem;
+    padding: 0 3rem;
+    font-size: 2rem;
+    border-radius: 3rem;
+    color: rgb(40, 45, 50);
+    cursor: pointer;
+    transition: all .5s;
+    transition-timing-function: cubic-bezier(.2, 3, .4, 1);
+    user-select: none;
+
+    &:hover{
+      transform: scale(1.1, 1.1);
+    }
+
+    &:active{
+      transform: scale(1.05, 1.05);
+    }
+  }
+}

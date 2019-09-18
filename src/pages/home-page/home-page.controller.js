@@ -1,6 +1,6 @@
-function HomeController() {
-    this.name = 'Batman'
-    this.title = 'Billy Ramos'
+function HomeController($location) {
+    this.name = 'Batman';
+    this.title = 'Billy Ramos';
 
     this.toUppercase = function (str) {
         if (str) {
@@ -10,6 +10,13 @@ function HomeController() {
         }
     };
 
+    this.onDiscover = function () {
+        // todo: need card portfolio page
+        $location.path('/article-tiles')
+    }
+
 }
 
-module.exports = [HomeController];
+HomeController.$inject = ['$location'];
+
+module.exports = HomeController;

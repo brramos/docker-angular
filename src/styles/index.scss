@@ -1,7 +1,17 @@
 @import "colors";
+@import "mixins";
 
 @import '../pages/welcome-page/welcome-page-style';
 @import '../pages/home-page/home-page-style';
+@import '../pages/button-page/button-page-style';
+@import '../pages/hover-button-page/hover-button-page-style';
+@import '../pages/text-in-border-page/text-in-border-page-style';
+@import '../pages/card-effect-page/card-effect-page-style';
+@import "../pages/article-tiles-page/article-tiles-page-style";
+@import "../pages/backlight-page/backlight-page-style";
+@import "../pages/pixie-dust-page/pixie-dust-page-style";
+@import "../pages/header-animation-page/header-animation-page-style";
+@import "../pages/solar-system-page/solar-system-page-style";
 
 *, *::before, *::after {
   margin: 0;
@@ -22,4 +32,3 @@ body {
   padding: 3rem;
   box-sizing: border-box;
 }
-
